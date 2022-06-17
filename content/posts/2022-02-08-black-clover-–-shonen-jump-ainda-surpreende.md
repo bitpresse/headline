@@ -6,6 +6,8 @@ subtitle: "Depois de 120 episódios de Black Clover, eu estou anestesiado. Uma
 excerpt: "Depois de 120 episódios de Black Clover, eu estou anestesiado. Uma boa
   história, com personagens cativantes: A Shonen Jump não erra!"
 featured_image: Black-Clover-anime-black-bulls-screenshot-destaque-1200x720_nqxmcc.jpg
+featured_image_alt: "Asta, Noelle, Yami e todos os Touros Negros"
+featured_image_caption: "(Reprodução/Crunchyroll)"
 authors:
   - Henrique Picanço
 categories:

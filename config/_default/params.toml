@@ -1,0 +1,46 @@
+# Meta Data for SEO
+
+## Homepage
+title = "Curto Circuito"
+titleSeparator = "|"
+titleAddition = "Filmes, Séries, Animes, Games, Tecnologia"
+description = "Notícias, reportagens e mais sobre filmes, séries, animes, mangás, games, tecnologia, HQs, livros, cosplays e tudo mais sobre o universo nerd!"
+
+## Documentation
+# docsVersion = "0.3"
+
+## Open Graph
+images = ["doks.png"]
+ogLocale = "pt_BR"
+domainTLD = "hugo-site-project.netlify.app"
+titleHome = "Curto Circuito"
+
+## Twitter Cards
+twitterSite = "@curtocircuitonet"
+twitterCreator = "@henriquepicanco"
+
+## JSON-LD
+# schemaType = "Person"
+schemaType = "Organization"
+schemaName = "Curto Circuito"
+schemaAuthor = "Henrique Picanço"
+schemaAuthorTwitter = "https://twitter.com/henriquepicanco"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/henriquepicanco/"
+schemaAuthorGitHub = "https://github.com/henriquepicanco"
+schemaLocale = "pt-BR"
+schemaLogo = "logo-doks.png"
+schemaLogoWidth = 512
+schemaLogoHeight = 512
+schemaImage = "doks.png"
+schemaImageWidth = 1280
+schemaImageHeight = 640
+schemaTwitter = "https://twitter.com/curtocircuitonet"
+schemaLinkedIn = ""
+schemaGitHub = "https://github.com/henriquepicanco/curtocircuito.net"
+schemaSection = "blog"
+
+## Sitelinks Search Box
+siteLinksSearchBox = false
+
+## Chrome Browser
+themeColor = "#fff"

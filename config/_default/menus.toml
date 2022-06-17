@@ -1,0 +1,44 @@
+[[main]]
+identifier = 'filmes'
+name = 'Filmes'
+url = '/filmes/'
+weight = 1
+
+[[main]]
+identifier = 'series-e-tv'
+name = 'Séries e TV'
+url = '/series-e-tv/'
+weight = 2
+
+[[main]]
+identifier = 'animes-e-mangas'
+name = 'Animes e Mangás'
+url = '/animes-e-mangas/'
+weight = 3
+
+[[main]]
+identifier = 'games'
+name = 'Games'
+url = '/games/'
+weight = 4
+
+[[main]]
+identifier = 'tecnologia'
+name = 'Tecnologia'
+url = '/tecnologia/'
+weight = 5
+
+[[footer]]
+name = 'Sobre'
+url = '/sobre'
+weight = 1
+
+[[footer]]
+name = 'Política de Privacidade'
+url = '/politica-de-privacidade'
+weight = 2
+
+[[footer]]
+name = 'Contato'
+url = '/contato'
+weight = 3
