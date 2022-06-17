@@ -9,7 +9,7 @@ featured_image: 1984_mit5kq.jpg
 authors:
   - Henrique Picanço
 categories:
-  - Filmes
+  - HQs e Livros
 tags:
   - "1984"
   - George Orwell
