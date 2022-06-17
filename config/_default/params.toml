@@ -6,9 +6,6 @@ titleSeparator = "|"
 titleAddition = "Filmes, Séries, Animes, Games, Tecnologia"
 description = "Notícias, reportagens e mais sobre filmes, séries, animes, mangás, games, tecnologia, HQs, livros, cosplays e tudo mais sobre o universo nerd!"
 
-## Documentation
-# docsVersion = "0.3"
-
 ## Open Graph
 images = ["doks.png"]
 ogLocale = "pt_BR"
@@ -39,8 +36,9 @@ schemaLinkedIn = ""
 schemaGitHub = "https://github.com/henriquepicanco/curtocircuito.net"
 schemaSection = "blog"
 
-## Sitelinks Search Box
-siteLinksSearchBox = false
-
 ## Chrome Browser
 themeColor = "#fff"
+
+# Social
+twitter = "curtocircuitonet"
+instagram = "curtocircuitonet"

@@ -2,7 +2,7 @@
 type: page
 title: Sobre
 excerpt: Conheça um pouco sobre o Cubo Atômico, seu conteúdo e outros.
-featured_image: uploads/mono-wall.jpg
+featured_image: teste.jpg
 ---
 No **Cubo Atômico**, você encontrará notícias, reportagens e especiais sobre filmes, séries, televisão, animes, mangás, games, tecnologia e todo, e qualquer, assunto relacionado ao mundo nerd.
 

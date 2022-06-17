@@ -2,8 +2,7 @@
 type: page
 title: Changelog
 excerpt: Confira todas as mudanças do site ao longo do tempo, além de uma lista de tecnologias empregadas no Cubo Atômico.
-featured_image:
-    - uploads/cubo-atômico.jpg
+featured_image: teste.jpg
 ---
 
 ## Versão 1.0
