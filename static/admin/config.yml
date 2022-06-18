@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: test-repo
   branch: main
 
 publish_mode: editorial_workflow
@@ -51,7 +51,7 @@ collections:
         name: "images"
         hint: "Imagem destacada que irá ser exibida na página inicial, arquivos, links compartilhados nas redes sociais e no topo da página singular."
         summary: "{{fields.image}}"
-        widget: "list"
+        widget: "object"
         collapsed: false
         required: true
         fields:
