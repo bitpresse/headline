@@ -10,8 +10,8 @@ display_url: https://cuboatomicoexperimental.netlify.app/
 
 locale: "pt"
 
-media_folder: "assets/images"
-public_folder: "/images"
+media_folder: assets/images
+public_folder: /images
 
 collections:
   - name: "artigos"
