@@ -12,7 +12,7 @@ authors:
 categories:
   - Filmes
 tags:
-  - "Experimento #01"
+  - "Experimento 01"
 date: 2022-06-18T12:54:44.314Z
 ---
 Apenas um experimento de novas configurações no NetlifyCMS.
