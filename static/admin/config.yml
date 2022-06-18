@@ -1,0 +1,148 @@
+backend:
+  name: test-repo
+  branch: main
+
+publish_mode: editorial_workflow
+logo_url: https://cuboatomicoexperimental.netlify.app/uploads/cubo-atômico.svg
+
+site_url: https://cuboatomicoexperimental.netlify.app/
+display_url: https://cuboatomicoexperimental.netlify.app/
+
+locale: 'pt'
+
+media_library:
+  name: cloudinary
+  output_filename_only: true
+  config:
+    cloud_name: cuboatomicoexperimental
+    api_key: 485612456867651
+
+collections:
+  - name: 'artigos'
+    label: 'Artigos'
+    folder: 'content/posts'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    summary: '{{title}} - {{year}}/{{month}}/{{day}}'
+    preview: false
+    fields:
+      - label: 'Type'
+        name: 'type'
+        widget: 'hidden'
+        default: 'post'
+
+      - label: 'Título'
+        name: 'title'
+        hint: 'Título do artigo - deve ter no máximo 60 caracteres.'
+        widget: 'string'
+        required: true
+
+      - label: 'Subtítulo'
+        name: 'subtitle'
+        hint: 'Um subtítulo que será exibido abaixo do título em páginas singulares - deve ter entre 20 e 60 caracteres.'
+        widget: 'string'
+        pattern: ['.{20,60}', 'Deve ter entre 20 e 60 caracteres']
+        required: true
+
+      - label: 'Resumo'
+        name: 'excerpt'
+        hint: 'Um texto que será exibido na página inicial, arquivos e em links compartilhados nas redes sociais. Deve ter, no máximo, 160 caracteres.'
+        pattern: ['.{0,160}', 'Deve ter, no máximo, 160 caracteres']
+        widget: 'string'
+        required: true
+
+      - label: 'Imagem Destacada'
+        name: 'images'
+        hint: 'Imagem destacada que irá ser exibida na página inicial, arquivos, links compartilhados nas redes sociais e no topo da página singular.'
+        summary: '{{fields.image}}'
+        widget: 'list'
+        collapsed: false
+        required: true
+        fields:
+          - label: 'Imagem'
+            name: 'featured_image'
+            widget: 'image'
+            allow_multiple: false
+          - label: 'Texto Alternativo'
+            name: 'featured_image_alt'
+            widget: 'string'
+          - label: 'Legenda'
+            name: 'featured_image_caption'
+            widget: 'string'
+
+      - label: 'Corpo'
+        name: 'body'
+        hint: 'Conteúdo do artigo.'
+        widget: 'markdown'
+        required: true
+
+      - label: 'Autor(es)'
+        name: 'authors'
+        hint: 'Selecine um ou mais autores para este artigo'
+        widget: 'select'
+        multiple: true
+        min: 1
+        required: true
+        options: ["Zé das Neves", "Maria Maciel", "Henrique Picanço", "Esmaelina Castro"]
+
+      - label: 'Categoria'
+        name: 'categories'
+        hint: 'Selecine uma categoria para o artigo.'
+        widget: 'select'
+        multiple: true
+        min: 1
+        max: 1
+        required: true
+        options: ["Filmes", "Séries e TV", "Animes e Mangás", "Games", "Tecnologia"]
+
+      - label: 'Tags'
+        name: 'tags'
+        hint: 'Adicione alguns marcadores para este artigo. Um marcador por linha.'
+        widget: 'list'
+        required: true
+        field:
+          label: 'Tag'
+          name: 'tag'
+          widget: 'string'
+
+      - label: 'Data de publicação'
+        name: 'date'
+        hint: 'Clique em agora para este artigo ter a data mais próxima da produção original do conteúdo nele contido.'
+        widget: 'datetime'
+
+  - name: 'pages'
+    label: 'Páginas'
+    folder: 'content/pages'
+    create: true
+    slug: '{{slug}}'
+    preview: false
+    fields:
+      - label: 'Type'
+        name: 'type'
+        widget: 'hidden'
+        default: 'page'
+
+      - label: 'Título'
+        name: 'title'
+        hint: 'Título do artigo - deve ter no máximo 60 caracteres.'
+        widget: 'string'
+        required: true
+
+      - label: 'Resumo'
+        name: 'excerpt'
+        hint: 'Um texto que será exibido em links compartilhados nas redes sociais. Deve ter, no máximo, 160 caracteres.'
+        pattern: ['.{0,160}', 'Deve ter, no máximo, 160 caracteres']
+        widget: 'string'
+        required: true
+
+      - label: 'Imagem Destacada'
+        name: 'image'
+        hint: 'Imagem destacada que irá ser exibida na página inicial, arquivos, links compartilhados nas redes sociais e no topo da página singular.'
+        widget: 'image'
+        required: true
+
+      - label: 'Corpo'
+        name: 'body'
+        hint: 'Conteúdo do artigo.'
+        widget: 'markdown'
+        required: true
