@@ -12,7 +12,7 @@ display_url: https://cuboatomicoexperimental.netlify.app/
 locale: "pt"
 
 media_folder: assets/images
-public_folder: /images
+public_folder: ''
 
 collections:
   - name: "artigos"
@@ -20,7 +20,7 @@ collections:
     folder: "content/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    summary: "{{title}} - {{year}}/{{month}}/{{day}}"
+    summary: "{{year}}/{{month}}/{{day}} - {{title}}"
     preview: false
     fields:
       - label: "Type"
@@ -28,52 +28,50 @@ collections:
         widget: "hidden"
         default: "post"
 
-      - label: "Título"
+      - label: "Título [REQUERIDO]"
         name: "title"
-        hint: "Título do artigo - deve ter no máximo 60 caracteres."
+        hint: "Título do artigo - **deve ter no máximo 60 caracteres**."
         widget: "string"
         required: true
 
-      - label: "Subtítulo"
+      - label: "Subtítulo [REQUERIDO]"
         name: "subtitle"
-        hint: "Um subtítulo que será exibido abaixo do título em páginas singulares - deve ter entre 20 e 60 caracteres."
+        hint: "Um subtítulo que será exibido abaixo do título em páginas singulares - **deve ter entre 20 e 60 caracteres**."
         widget: "string"
         pattern: [".{20,60}", "Deve ter entre 20 e 60 caracteres"]
         required: true
 
-      - label: "Resumo"
+      - label: "Resumo [REQUERIDO]"
         name: "excerpt"
-        hint: "Um texto que será exibido na página inicial, arquivos e em links compartilhados nas redes sociais. Deve ter, no máximo, 160 caracteres."
+        hint: "Um texto que será exibido na página inicial, arquivos e em links compartilhados nas redes sociais. **Deve ter, no máximo, 160 caracteres**."
         pattern: [".{0,160}", "Deve ter, no máximo, 160 caracteres"]
         widget: "string"
         required: true
 
-      - label: "Imagem Destacada"
-        name: "images"
+      - label: "Imagem Destacada [REQUERIDO]"
+        name: "featured_image"
         hint: "Imagem destacada que irá ser exibida na página inicial, arquivos, links compartilhados nas redes sociais e no topo da página singular."
-        summary: "{{fields.image}}"
-        widget: "object"
-        collapsed: false
+        widget: "image"
         required: true
-        fields:
-          - label: "Imagem"
-            name: "featured_image"
-            widget: "image"
-            allow_multiple: false
-          - label: "Texto Alternativo"
-            name: "featured_image_alt"
-            widget: "string"
-          - label: "Legenda"
-            name: "featured_image_caption"
-            widget: "string"
 
-      - label: "Corpo"
+      - label: "Atributo ALT da Imagem Destacada [REQUERIDO]"
+        name: "featured_image_alt"
+        hint: "Texto que será colocado no atributo ALT da imagem destacada. Uma boa prática para acessibilidade."
+        widget: "string"
+        required: true
+
+      - label: "Legenda da Imagem Destacada"
+        name: "featured_image_caption"
+        hint: "Legenda da imagem destacada nas páginas de posts. Créditos de imagens devem ser postas aqui."
+        widget: "string"
+
+      - label: "Corpo [REQUERIDO]"
         name: "body"
         hint: "Conteúdo do artigo."
         widget: "markdown"
         required: true
 
-      - label: "Autor(es)"
+      - label: "Autor(es) [REQUERIDO]"
         name: "authors"
         hint: "Selecine um ou mais autores para este artigo"
         widget: "select"
@@ -82,7 +80,7 @@ collections:
         required: true
         options: ["Zé das Neves", "Maria Maciel", "Henrique Picanço", "Esmaelina Castro"]
 
-      - label: "Categoria"
+      - label: "Categoria [REQUERIDO]"
         name: "categories"
         hint: "Selecine uma categoria para o artigo."
         widget: "select"
@@ -92,7 +90,7 @@ collections:
         required: true
         options: ["Filmes", "Séries e TV", "Animes e Mangás", "Games", "Tecnologia"]
 
-      - label: "Tags"
+      - label: "Tags [REQUERIDO]"
         name: "tags"
         hint: "Adicione alguns marcadores para este artigo. Um marcador por linha."
         widget: "list"
@@ -102,7 +100,7 @@ collections:
           name: "tag"
           widget: "string"
 
-      - label: "Data de publicação"
+      - label: "Data de publicação [REQUERIDO]"
         name: "date"
         hint: "Clique em agora para este artigo ter a data mais próxima da produção original do conteúdo nele contido."
         widget: "datetime"
@@ -119,26 +117,37 @@ collections:
         widget: "hidden"
         default: "page"
 
-      - label: "Título"
+      - label: "Título [REQUERIDO]"
         name: "title"
         hint: "Título do artigo - deve ter no máximo 60 caracteres."
         widget: "string"
         required: true
 
-      - label: "Resumo"
+      - label: "Resumo [REQUERIDO]"
         name: "excerpt"
         hint: "Um texto que será exibido em links compartilhados nas redes sociais. Deve ter, no máximo, 160 caracteres."
         pattern: [".{0,160}", "Deve ter, no máximo, 160 caracteres"]
         widget: "string"
         required: true
 
-      - label: "Imagem Destacada"
-        name: "image"
+      - label: "Imagem Destacada [REQUERIDO]"
+        name: "featured_image"
         hint: "Imagem destacada que irá ser exibida na página inicial, arquivos, links compartilhados nas redes sociais e no topo da página singular."
         widget: "image"
         required: true
 
-      - label: "Corpo"
+      - label: "Atributo ALT da Imagem Destacada [REQUERIDO]"
+        name: "featured_image_alt"
+        hint: "Texto que será colocado no atributo ALT da imagem destacada. Uma boa prática para acessibilidade."
+        widget: "string"
+        required: true
+
+      - label: "Legenda da Imagem Destacada"
+        name: "featured_image_caption"
+        hint: "Legenda da imagem destacada nas páginas de posts. Créditos de imagens devem ser postas aqui."
+        widget: "string"
+
+      - label: "Corpo [REQUERIDO]"
         name: "body"
         hint: "Conteúdo do artigo."
         widget: "markdown"

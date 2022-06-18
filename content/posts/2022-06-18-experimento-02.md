@@ -3,10 +3,9 @@ type: post
 title: Experimento 02
 subtitle: Segundo experimento de conteúdo com o NetlifyCMS.
 excerpt: Segundo experimento de conteúdo com o NetlifyCMS.
-images:
-  featured_image: /images/1984_mit5kq.jpg
-  featured_image_alt: "1984"
-  featured_image_caption: "1984"
+featured_image: 1984_mit5kq.jpg
+featured_image_alt: "1984"
+featured_image_caption: "1984"
 authors:
   - Henrique Picanço
 categories:
