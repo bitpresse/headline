@@ -1,6 +1,6 @@
 ---
 type: post
-title: "Experimento #01"
+title: "Experimento 01"
 subtitle: Apenas um experimento de novas configurações no NetlifyCMS.
 excerpt: Apenas um experimento de novas configurações no NetlifyCMS.
 images:
