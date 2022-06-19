@@ -1,5 +1,0 @@
-{
-    "frontMatter.content.autoUpdateDate": true,
-    "frontMatter.preview.host": "http://localhost:1313",
-    "frontMatter.framework.startCommand": "hugo server -D"
-}
