@@ -1,9 +1,9 @@
 baseURL = "https://hugo-site-project.netlify.app"
-languageCode = "pt-br"
+languageCode = "ar-ar"
 title = "Curto Circuito"
 theme = "hugo-theme-project"
 
-DefaultContentLanguage = "pt-br"
+DefaultContentLanguage = "ar-ar"
 
 paginate = 10
 paginatePath = "pagina"
