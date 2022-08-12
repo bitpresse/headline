@@ -88,7 +88,7 @@ collections:
         min: 1
         max: 1
         required: true
-        options: ["Movies", "Series and TV", "Animation and manga", "Games", "Technology"]
+        options: ["بيتكوين", "بلوكتشين", "كريبتو", "إيثريوم", "أخبار","العملات البديلة"]
 
       - label: "الكلمات الدلالية [REQUERIDO]"
         name: "tags"
