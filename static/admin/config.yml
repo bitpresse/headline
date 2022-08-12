@@ -28,33 +28,33 @@ collections:
         widget: "hidden"
         default: "post"
 
-      - label: "عنوان [REQUERIDO]"
+      - label: "عنوان [REQUERID]"
         name: "title"
         hint: "عنوان المقال - ** يجب ألا يزيد عن 60 حرفًا **."
         widget: "string"
         required: true
 
-      - label: "شرح [REQUERIDO]"
+      - label: "شرح [REQUERID]"
         name: "subtitle"
         hint: "العنوان الفرعي الذي سيظهر أسفل العنوان في الصفحات الفردية - ** يجب أن يتراوح بين 20 و 60 حرفًا **."
         widget: "string"
         pattern: [".{20,60}", "يجب أن يكون بين 20 و 60 حرفًا"]
         required: true
 
-      - label: "ملخص [REQUERIDO]"
+      - label: "ملخص [REQUERID]"
         name: "excerpt"
         hint: "نص سيتم عرضه على الصفحة الرئيسية والملفات والروابط المشتركة على الشبكات الاجتماعية. ** يجب ألا يزيد عن 160 حرفًا **."
         pattern: [".{0,160}", "يجب ألا يزيد عن 160 حرفًا"]
         widget: "string"
         required: true
 
-      - label: "صورة مميزة [REQUERIDO]"
+      - label: "صورة مميزة [REQUERID]"
         name: "featured_image"
         hint: "الصورة المميزة التي سيتم عرضها على الصفحة الرئيسية والملفات والروابط المشتركة على الشبكات الاجتماعية وفي الجزء العلوي من الصفحة الفردية."
         widget: "image"
         required: true
 
-      - label: "سمة ALT للصورة المميزة [REQUERIDO]"
+      - label: "سمة ALT للصورة المميزة [REQUERID]"
         name: "featured_image_alt"
         hint: "النص الذي سيتم وضعه في سمة ALT للصورة المميزة. ممارسة جيدة لإمكانية الوصول."
         widget: "string"
@@ -65,22 +65,22 @@ collections:
         hint: "ظهرت تسمية توضيحية للصورة على صفحات المنشور. يجب نشر اعتمادات الصورة هنا."
         widget: "string"
 
-      - label: "النص [REQUERIDO]"
+      - label: "النص [REQUERID]"
         name: "body"
         hint: "محتوى المقال."
         widget: "markdown"
         required: true
 
-      - label: "المؤلفون [REQUERIDO]"
+      - label: "المؤلفون [REQUERID]"
         name: "authors"
         hint: "حدد مؤلف واحد أو أكثر لهذه المقالة"
         widget: "select"
         multiple: true
         min: 1
-        required: true
-        options: ["Zé das Neves","Maria Maciel","Henrique Picanço","Esmaelina Castro"]
-
-      - label: "فئة [REQUERIDO]"
+        required: 
+true
+        options: ["سمير آيت حماد","سفاو أيت عطا","أكسيل مازيغ","أنير أيت إيشو"]
+      - label: "فئة [REQUERID]"
         name: "categories"
         hint: "حدد فئة للمقال."
         widget: "select"
@@ -90,7 +90,7 @@ collections:
         required: true
         options: ["بيتكوين", "بلوكتشين", "كريبتو", "إيثريوم", "أخبار","العملات البديلة"]
 
-      - label: "الكلمات الدلالية [REQUERIDO]"
+      - label: "الكلمات الدلالية [REQUERID]"
         name: "tags"
         hint: "أضف بعض الإشارات المرجعية إلى هذه المقالة. علامة واحدة في كل سطر."
         widget: "list"
@@ -100,7 +100,7 @@ collections:
           name: "tag"
           widget: "string"
 
-      - label: "تاريخ النشر [REQUERIDO]"
+      - label: "تاريخ النشر [REQUERID]"
         name: "date"
         hint: "انقر الآن للحصول على هذه المقالة للحصول على أقرب تاريخ للإنتاج الأصلي للمحتوى المتضمن فيها."
         widget: "datetime"
@@ -117,26 +117,26 @@ collections:
         widget: "hidden"
         default: "page"
 
-      - label: "عنوان [REQUERIDO]"
+      - label: "عنوان [REQUERID]"
         name: "title"
         hint: "عنوان المقالة - يجب ألا يزيد عن 60 حرفًا."
         widget: "string"
         required: true
 
-      - label: "ملخص [REQUERIDO]"
+      - label: "ملخص [REQUERID]"
         name: "excerpt"
         hint: "نص سيتم عرضه في الروابط المشتركة على الشبكات الاجتماعية. يجب ألا يزيد عدد الأحرف عن 160 حرفًا."
         pattern: [".{0,160}", "Deve ter, no máximo, 160 caracteres"]
         widget: "string"
         required: true
 
-      - label: "صورة مميزة [REQUERIDO]"
+      - label: "صورة مميزة [REQUERID]"
         name: "featured_image"
         hint: "الصورة المميزة التي سيتم عرضها على الصفحة الرئيسية والملفات والروابط المشتركة على الشبكات الاجتماعية وفي الجزء العلوي من الصفحة الفردية."
         widget: "image"
         required: true
 
-      - label: "سمة ALT للصورة المميزة [REQUERIDO]"
+      - label: "سمة ALT للصورة المميزة [REQUERID]"
         name: "featured_image_alt"
         hint: "النص الذي سيتم وضعه في سمة ALT للصورة المميزة. ممارسة جيدة لإمكانية الوصول."
         widget: "string"
@@ -147,7 +147,7 @@ collections:
         hint: "ظهرت تسمية توضيحية للصورة على صفحات المنشور. يجب نشر اعتمادات الصورة هنا."
         widget: "string"
 
-      - label: "نص [REQUERIDO]"
+      - label: "نص [REQUERID]"
         name: "body"
         hint: "محتوى المقال."
         widget: "markdown"
