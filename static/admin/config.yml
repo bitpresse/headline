@@ -9,14 +9,14 @@ logo_url: https://cuboatomicoexperimental.netlify.app/uploads/cubo-atômico.svg
 site_url: https://cuboatomicoexperimental.netlify.app/
 display_url: https://cuboatomicoexperimental.netlify.app/
 
-locale: "pt"
+locale: "ar"
 
 media_folder: assets/images
 public_folder: ''
 
 collections:
-  - name: "artigos"
-    label: "Artigos"
+  - name: "مقالات"
+    label: "مقالات"
     folder: "content/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -28,71 +28,71 @@ collections:
         widget: "hidden"
         default: "post"
 
-      - label: "Título [REQUERIDO]"
+      - label: "عنوان [REQUERIDO]"
         name: "title"
-        hint: "Título do artigo - **deve ter no máximo 60 caracteres**."
+        hint: "عنوان المقال - ** يجب ألا يزيد عن 60 حرفًا **."
         widget: "string"
         required: true
 
-      - label: "Subtítulo [REQUERIDO]"
+      - label: "شرح [REQUERIDO]"
         name: "subtitle"
-        hint: "Um subtítulo que será exibido abaixo do título em páginas singulares - **deve ter entre 20 e 60 caracteres**."
+        hint: "العنوان الفرعي الذي سيظهر أسفل العنوان في الصفحات الفردية - ** يجب أن يتراوح بين 20 و 60 حرفًا **."
         widget: "string"
-        pattern: [".{20,60}", "Deve ter entre 20 e 60 caracteres"]
+        pattern: [".{20,60}", "يجب أن يكون بين 20 و 60 حرفًا"]
         required: true
 
-      - label: "Resumo [REQUERIDO]"
+      - label: "ملخص [REQUERIDO]"
         name: "excerpt"
-        hint: "Um texto que será exibido na página inicial, arquivos e em links compartilhados nas redes sociais. **Deve ter, no máximo, 160 caracteres**."
-        pattern: [".{0,160}", "Deve ter, no máximo, 160 caracteres"]
+        hint: "نص سيتم عرضه على الصفحة الرئيسية والملفات والروابط المشتركة على الشبكات الاجتماعية. ** يجب ألا يزيد عن 160 حرفًا **."
+        pattern: [".{0,160}", "يجب ألا يزيد عن 160 حرفًا"]
         widget: "string"
         required: true
 
-      - label: "Imagem Destacada [REQUERIDO]"
+      - label: "صورة مميزة [REQUERIDO]"
         name: "featured_image"
-        hint: "Imagem destacada que irá ser exibida na página inicial, arquivos, links compartilhados nas redes sociais e no topo da página singular."
+        hint: "الصورة المميزة التي سيتم عرضها على الصفحة الرئيسية والملفات والروابط المشتركة على الشبكات الاجتماعية وفي الجزء العلوي من الصفحة الفردية."
         widget: "image"
         required: true
 
-      - label: "Atributo ALT da Imagem Destacada [REQUERIDO]"
+      - label: "سمة ALT للصورة المميزة [REQUERIDO]"
         name: "featured_image_alt"
-        hint: "Texto que será colocado no atributo ALT da imagem destacada. Uma boa prática para acessibilidade."
+        hint: "النص الذي سيتم وضعه في سمة ALT للصورة المميزة. ممارسة جيدة لإمكانية الوصول."
         widget: "string"
         required: true
 
-      - label: "Legenda da Imagem Destacada"
+      - label: "التسمية التوضيحية للصورة المميزة"
         name: "featured_image_caption"
-        hint: "Legenda da imagem destacada nas páginas de posts. Créditos de imagens devem ser postas aqui."
+        hint: "ظهرت تسمية توضيحية للصورة على صفحات المنشور. يجب نشر اعتمادات الصورة هنا."
         widget: "string"
 
-      - label: "Corpo [REQUERIDO]"
+      - label: "النص [REQUERIDO]"
         name: "body"
-        hint: "Conteúdo do artigo."
+        hint: "محتوى المقال."
         widget: "markdown"
         required: true
 
-      - label: "Autor(es) [REQUERIDO]"
+      - label: "المؤلفون [REQUERIDO]"
         name: "authors"
-        hint: "Selecine um ou mais autores para este artigo"
+        hint: "حدد مؤلف واحد أو أكثر لهذه المقالة"
         widget: "select"
         multiple: true
         min: 1
         required: true
-        options: ["Zé das Neves", "Maria Maciel", "Henrique Picanço", "Esmaelina Castro"]
+        options: ["Zé das Neves" و "Maria Maciel" و "Henrique Picanço" و "Esmaelina Castro"]
 
-      - label: "Categoria [REQUERIDO]"
+      - label: "فئة [REQUERIDO]"
         name: "categories"
-        hint: "Selecine uma categoria para o artigo."
+        hint: "حدد فئة للمقال."
         widget: "select"
         multiple: true
         min: 1
         max: 1
         required: true
-        options: ["Filmes", "Séries e TV", "Animes e Mangás", "Games", "Tecnologia"]
+        options: ["الأفلام" ، "المسلسلات والتلفزيون" ، "الرسوم المتحركة والمانجا" ، "الألعاب" ، "التكنولوجيا"]
 
-      - label: "Tags [REQUERIDO]"
+      - label: "الكلمات الدلالية [REQUERIDO]"
         name: "tags"
-        hint: "Adicione alguns marcadores para este artigo. Um marcador por linha."
+        hint: "أضف بعض الإشارات المرجعية إلى هذه المقالة. علامة واحدة في كل سطر."
         widget: "list"
         required: true
         field:
@@ -100,55 +100,55 @@ collections:
           name: "tag"
           widget: "string"
 
-      - label: "Data de publicação [REQUERIDO]"
+      - label: "تاريخ النشر [REQUERIDO]"
         name: "date"
-        hint: "Clique em agora para este artigo ter a data mais próxima da produção original do conteúdo nele contido."
+        hint: "انقر الآن للحصول على هذه المقالة للحصول على أقرب تاريخ للإنتاج الأصلي للمحتوى المتضمن فيها."
         widget: "datetime"
 
   - name: "pages"
-    label: "Páginas"
+    label: "الصفحات"
     folder: "content/pages"
     create: true
     slug: "{{slug}}"
     preview: false
     fields:
-      - label: "Type"
+      - label: "نوع"
         name: "type"
         widget: "hidden"
         default: "page"
 
-      - label: "Título [REQUERIDO]"
+      - label: "عنوان [REQUERIDO]"
         name: "title"
-        hint: "Título do artigo - deve ter no máximo 60 caracteres."
+        hint: "عنوان المقالة - يجب ألا يزيد عن 60 حرفًا."
         widget: "string"
         required: true
 
-      - label: "Resumo [REQUERIDO]"
+      - label: "ملخص [REQUERIDO]"
         name: "excerpt"
-        hint: "Um texto que será exibido em links compartilhados nas redes sociais. Deve ter, no máximo, 160 caracteres."
+        hint: "نص سيتم عرضه في الروابط المشتركة على الشبكات الاجتماعية. يجب ألا يزيد عدد الأحرف عن 160 حرفًا."
         pattern: [".{0,160}", "Deve ter, no máximo, 160 caracteres"]
         widget: "string"
         required: true
 
-      - label: "Imagem Destacada [REQUERIDO]"
+      - label: "صورة مميزة [REQUERIDO]"
         name: "featured_image"
-        hint: "Imagem destacada que irá ser exibida na página inicial, arquivos, links compartilhados nas redes sociais e no topo da página singular."
+        hint: "الصورة المميزة التي سيتم عرضها على الصفحة الرئيسية والملفات والروابط المشتركة على الشبكات الاجتماعية وفي الجزء العلوي من الصفحة الفردية."
         widget: "image"
         required: true
 
-      - label: "Atributo ALT da Imagem Destacada [REQUERIDO]"
+      - label: "سمة ALT للصورة المميزة [REQUERIDO]"
         name: "featured_image_alt"
-        hint: "Texto que será colocado no atributo ALT da imagem destacada. Uma boa prática para acessibilidade."
+        hint: "النص الذي سيتم وضعه في سمة ALT للصورة المميزة. ممارسة جيدة لإمكانية الوصول."
         widget: "string"
         required: true
 
-      - label: "Legenda da Imagem Destacada"
+      - label: "التسمية التوضيحية للصورة المميزة"
         name: "featured_image_caption"
-        hint: "Legenda da imagem destacada nas páginas de posts. Créditos de imagens devem ser postas aqui."
+        hint: "ظهرت تسمية توضيحية للصورة على صفحات المنشور. يجب نشر اعتمادات الصورة هنا."
         widget: "string"
 
-      - label: "Corpo [REQUERIDO]"
+      - label: "نص [REQUERIDO]"
         name: "body"
-        hint: "Conteúdo do artigo."
+        hint: "محتوى المقال."
         widget: "markdown"
         required: true
