@@ -78,7 +78,7 @@ collections:
         multiple: true
         min: 1
         required: true
-        options: ["Zé das Neves" و "Maria Maciel" و "Henrique Picanço" و "Esmaelina Castro"]
+        options: ["Zé das Neves","Maria Maciel","Henrique Picanço","Esmaelina Castro"]
 
       - label: "فئة [REQUERIDO]"
         name: "categories"
