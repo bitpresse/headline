@@ -8,37 +8,37 @@ description = "Notícias, reportagens e mais sobre filmes, séries, animes, mang
 
 ## Open Graph
 images = ["doks.png"]
-ogLocale = "pt_BR"
-domainTLD = "hugo-site-project.netlify.app"
-titleHome = "Curto Circuito"
+ogLocale = "ar_AR"
+domainTLD = "bitpresse.netlify.app"
+titleHome = "بيتبريس"
 
 ## Twitter Cards
-twitterSite = "@curtocircuitonet"
-twitterCreator = "@henriquepicanco"
+twitterSite = "@cryptoserie"
+twitterCreator = "@cryptoserie"
 
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
-schemaName = "Curto Circuito"
-schemaAuthor = "Henrique Picanço"
-schemaAuthorTwitter = "https://twitter.com/henriquepicanco"
-schemaAuthorLinkedIn = "https://www.linkedin.com/in/henriquepicanco/"
-schemaAuthorGitHub = "https://github.com/henriquepicanco"
-schemaLocale = "pt-BR"
+schemaName = "بيتبريس"
+schemaAuthor = "بيتبريس"
+schemaAuthorTwitter = "https://twitter.com/cryptoserie"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/bitpresse/"
+schemaAuthorGitHub = "https://github.com/bitpresse"
+schemaLocale = "ar-AR"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
 schemaImage = "doks.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/curtocircuitonet"
+schemaTwitter = "https://twitter.com/cryptoserie"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/henriquepicanco/curtocircuito.net"
+schemaGitHub = "https://github.com/bitpresse"
 schemaSection = "blog"
 
 ## Chrome Browser
 themeColor = "#fff"
 
 # Social
-twitter = "curtocircuitonet"
-instagram = "curtocircuitonet"
+twitter = "cryptoserie"
+instagram = "cryptoserie"
